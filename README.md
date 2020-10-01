@@ -1,36 +1,33 @@
 # Project title
 
-Verification D'erreur.
+Error Verification
 
 ## Getting Started
 
-This project is mainly for git users but can be helpful for other users for sure.
-It offers a series of aliases such as :
-1) gss = git status
-2) gap = git add
-3) gpl = git pull
-4) gpu = git push
+1. Even parity bit
+To test the code, type 'python3 pair.py' on your terminal to run the code.
+It will ask to enter a number which the code will convert to binary.
+It will then return and output the even parity bit result.
 
-And also a function with simplifies the git commit code making it more understandable and quicker. For exemple the code :
-gco this is my commit message will send the code git commit -m "[current branch you are working] this is my commit message"
-With the function gco you don't need to put your message between inverted commas. Just gco yourMessage. 
+2. Odd parity bit
+To test the code, type 'python3 impair.py' on your terminal to run the code.
+It will ask to enter a number which the code will convert to binary.
+It will then return and output the odd parity bit result.
 
-The folder you downloaded is a git repository and you can work on it and add your own modifications, don't worry it's not that folder that is linked to your .bashrc file and for your modifications to take place you have request us a pull request and we will do our best to merge it into master. Then you will just have to run updateFancyTools for the modification to take place, update fancy tool is a utility tool have helps you to pull the modifications onto your system or to pull any of our updates. Or you can always copy our repo into your github and have all the rights of the project.
+3. Checksum
+You first need to compile the code with the code 'g++ cs.cpp -o cs'
+Then execute with './cs'
+The code will ask you to enter a string which it will perform checksum1 and checksum2
 
 ### Prerequisites
 
 You just need to clone the git repository onto your computer or download it's zip file and extract it.
-
-### Installing
-
-You just need to execute the file install.sh into your terminal and the job is done with the code : ./install.sh
-
-note:*Sometimes you need to give the file executable rights for it to be able to install on your pc, the code to fix that is :chmod +x install.sh*
-
+For the even & odd parity bit, you need python3 on your system. To install it use the code 'sudo apt-get install python3'
+For the checksum, you need to compile and execute the c++ code with which you need to install g++ with the code 'sudo apt-get install g++'
 
 ## Built With
 
-* [Bash Script]
+* [Python3 && c++]
 
 ## Authors
 
