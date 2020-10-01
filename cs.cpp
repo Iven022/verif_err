@@ -6,13 +6,16 @@ using namespace std;
 void convertToASCII(string letter)
 {
     int total = 0 ;
+    int total1 = 0 ;
     for (int i = 0; i < letter.length(); i++)
     {
         char x = letter.at(i) ;
         //cout << int(x) << endl ;
 	total += int(x) ;
+	total1 += total ;
     }
-    cout << total << endl ;
+    cout << "Checksum1 = " << total << endl ;
+    cout << "Checksum2 = " << total1 << endl ;
 }
 
 int main()
